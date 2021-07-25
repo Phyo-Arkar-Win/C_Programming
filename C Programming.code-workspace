@@ -1,0 +1,27 @@
+{
+    "folders": [
+		{
+			"path": "Hello World"
+		},
+		{
+			"path": "Largest Number"
+		},
+		{
+			"path": "Functions"
+		},
+		{
+			"path": "Memory Management"
+		},
+		{
+			"path": "Testing"
+		},
+		{
+			"path": "Revisions"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"stdlib.h": "c"
+		}
+	}
+}
