@@ -17,6 +17,12 @@
 		},
 		{
 			"path": "Revisions"
+		},
+		{
+			"path": "Projects"
+		},
+		{
+			"path": "Advanced Data Types"
 		}
 	],
 	"settings": {
