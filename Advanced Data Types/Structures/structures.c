@@ -7,7 +7,6 @@ struct info{
 
 void printStatements(struct info person);
 
-
 int main(void){
     struct info person1;
     struct info person2 = {.age=18,.name="Tony"};

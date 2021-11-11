@@ -19,8 +19,6 @@ int main(void) {
     initializePoly(ptr,num);
     printPoly(ptr,num);
     free(ptr);
-    
-
 }
 
 void printPoint(struct point pt) {

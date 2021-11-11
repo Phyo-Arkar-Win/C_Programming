@@ -18,8 +18,9 @@ int main(void) {
 
 void readDate(struct date *var){
     scanf("%d %d %d",&(*var).year, &(*var).month, &(*var).day);
+    //scanf("%d %d %d",&var->year,&var->month,&var->day);
 }
 
 void printDate(struct date var){
-    printf("%d/%02d/%d",var.month, var.day, var.year);
+    printf("%02d/%02d/%d",var.month, var.day, var.year);
 }

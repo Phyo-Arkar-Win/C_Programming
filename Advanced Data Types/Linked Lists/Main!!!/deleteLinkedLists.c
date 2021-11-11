@@ -33,8 +33,6 @@ int main(void){
         printf("The data is %d",ptrToHead->data);
         return 0;
     }
-
-    
 }
 struct Node* valueAssign(){
     struct Node *ptr;
@@ -44,13 +42,11 @@ struct Node* valueAssign(){
     ptr->next = NULL;
     return ptr;
 }
-
 struct Node* append(struct Node* first, struct Node* second){
     struct Node *ptr;
     first->next = second;
     return first->next;
 }
-
 struct Node* printFunc(struct Node* ptr){
     printf("%d ",ptr->data);
     return ptr->next;

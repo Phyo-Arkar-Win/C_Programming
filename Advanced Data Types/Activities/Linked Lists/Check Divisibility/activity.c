@@ -87,12 +87,7 @@ int divisibleByThree(struct digit *Ptr){
         tempPtr = tempPtr->next;
         
     }
-    if(total%3 == 0){
-        return 1;
-    }
-    else{
-        return 0;
-    }
+    return total%3==0 ? 1 : 0;
 
 }
 // Write your divisibleByThree() function here

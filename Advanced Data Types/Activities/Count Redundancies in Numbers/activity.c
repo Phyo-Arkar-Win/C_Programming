@@ -108,6 +108,7 @@ int changeThrees(struct digit * start) {
     }
     return(sum);
 }
+
 struct digit* sameNumFunc(struct digit* ptr1,struct digit* ptr2){
     struct digit* sameNumPtr = ptr1;
     struct digit* currentPtr = ptr2;
@@ -147,9 +148,12 @@ int countRedun(struct digit *ptr){
     struct digit *tempPtr, *movingPtr, *sameNumPtr1,*sameNumPtr2;
     struct digit* sameNumPtrHead;
     tempPtr  = movingPtr = ptr;
+    //tempPtr will take a value from the linked list and change its value every time after the while loop is executed. 
+    //movingPtr will change value everytime the inside while loop is executed, checking if it has any same value as tempPtr.
     while(tempPtr != NULL){
         count = 0;
         movingPtr = tempPtr->next;
+
         while(movingPtr != NULL){
             if(movingPtr->num == tempPtr->num){
                 count++;
@@ -161,12 +165,13 @@ int countRedun(struct digit *ptr){
             sameNumPtrHead = sameNumPtr1;
             times++;
         }
-        else if(times > 0){
+        else{
             sameNumPtr2 = createDigit(tempPtr->num);
             sameNumPtr1 = append(sameNumPtr1,sameNumPtr2);
         }
+
         currentCount += count;
-        tempPtr = sameNumFunc(sameNumPtrHead,tempPtr);
+        tempPtr = sameNumFunc(sameNumPtrHead,tempPtr); //if it finds the same digit in the linked list, the func will skip the tempPtr to next one
     }
     freeNumber(sameNumPtrHead);
     return currentCount;

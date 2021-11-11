@@ -10,7 +10,7 @@ void printTriangle(struct point *);
 int main(void){
     struct point triangle[3];
     scan(triangle); // no need & due to triangle being an array
-    triangle[0]->x = 1; triangle[0].y = 0;
+    triangle[0].x = 1; triangle[0].y = 0;
     (triangle+2)->x = 3; (*(triangle+2)).y = 3; // -> dereferences so it is basically (*(triangle+2)).x = 3; left and right same
     printTriangle(triangle);
 }
